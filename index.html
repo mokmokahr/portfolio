@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="firstpage">
+        <div id="big-font">
+            <p data-aos="fade-up" data-aos-duration="1000" id="hello">hello,</p><p data-aos="fade-up" data-aos-duration="1000"> I'm developer</p><p data-aos="fade-up" data-aos-duration="1000">(</p><p data-aos="fade-up" data-aos-duration="1000" id="name">"JeongBin"</p><p data-aos="fade-up" data-aos-duration="1000">);</p>
+        </div>
+    </div>
+    <div class="zeropage">
+        <h3 data-aos="fade-right" data-aos-duration="1000">about me</h3>
+        <img data-aos="flip-left" data-aos-duration="1000" src="./img/personpicture.png" id="img__">
+        <div id="myprofile" data-aos="fade-down">
+            <div id="name_">Mok Jeong Bin</div>
+            <div><b>country</b> : Korea</div>
+            <div><b>age</b> : 17(Highschool firstgrade)</div>
+            <div><b>belong</b> : korea digital media highschool</div>
+            <div><b>e-mail</b> :jbmok66@dimigo.hs.kr / jbmok66@naver.com</div>
+
+        </div>
+    </div>
+    <div class="secondpage">
+        <h3 data-aos="fade-up" data-aos-duration="1000">My ability</h3>
+        <div id="iam"></div>
+        <br/>
+        <div id="center" data-aos="fade-left" data-aos-duration="1000">
+            <nav class="ability" id="red">
+                <p>HTML5/CSS3</p>
+                <p class="semiex">proficiency: 80%</p>
+                <p class="semiex">duration of study: 1year</p>
+                <p></p>
+            </nav>
+            <nav class="ability" id="orange">
+                <p>PYTHON</p>
+                <p class="semiex">proficiency: 70%</p>
+                <p class="semiex">duration of study: 2year</p>
+            </nav>
+            <nav class="ability" id="green">
+                <p>C-language</p>
+                <p class="semiex">proficiency: 70%</p>
+                <p class="semiex">duration of study: 1year</p>
+            </nav>
+            <nav class="ability" id="blue">
+                <p>JAVASCRIPT</p>
+                <p class="semiex">proficiency: 60%</p>
+                <p class="semiex">duration of study: 1year</p>
+            </nav>
+        </div>
+        <script src="script.js"></script>
+    </div>
+    <div class="thirdpage">
+        <h3 data-aos="fade-right" data-aos-duration="1000">My project</h3>
+        <div id="proj_btn" data-aos="fade-in" data-aos-duration="1000">
+            <button class="projects" onclick="instagram();">clone coding</button>
+            <button class="projects" onclick="autoschedule()">scheduler</button>
+            <button class="projects" onclick="">crawling</button>
+            <button class="projects">game</button>
+        </div>
+        <div id="ex" data-aos="fade-left" data-aos-duration="1000">click the image if you want to go to the website</div>
+        <div id="proj_explain">
+            <img id="insta" src="./img/instagram.png" onclick="golink_insta();" title="Go to website">
+            <img id="auto" src="./img/auto.png" alt="" onclick="golink_auto();" title="Go to website">
+            <img src="./img/" alt="" onclick="golink_crawling();">
+            <img src="./img/" alt="" onclick="golink_game();">
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
